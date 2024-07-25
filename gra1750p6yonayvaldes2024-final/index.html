@@ -13,41 +13,15 @@
 		margin: 0;
 		padding: 0;
 		background-color: black;
+		color: white;
 		font-family: "Poppins", sans-serif;
 	}
 	
-	wrapper {
-		display: block;
-		margin: auto;
-	}
-	
 	nav {
-		color: white;
-		background-color: black;
 		display: inline-block;
-		width: 30%;
-		height: 100%;
+		width: 29%;
 		margin: 0;
-		padding: 2%;
-	}
-	
-	ul, li, a{
-		font-weight: 900;
-		font-size: 2vw;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		text-decoration: none;
-		color: white;
-		padding-top: 10px;
-	}
-	
-	a:hover {
-		color: pink;
-	}
-	
-	.ratings {
-		font-size:1.3vw;
+		padding: 1.5vw 1vw 1vw 1.5vw;
 	}
 	
 	.movieTitle {
@@ -58,64 +32,28 @@
 		font-family: "Playfair Display", serif;
 	}
 	
-	.bannerTop {
-		display: inline-block;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		vertical-align: top;
-	}
-	
-	.bannerBottom {
-		display: inline-block;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	
-	.movieQuote {
-		position: absolute;
-		left: 10%;
-		top: 26%;
-		font-size: calc(1vw + 1vh);
-		font-family: "Playfair Display", serif;
-		font-weight: 600;
-	}
-	
-	.movieQuoteBottom{
-		position: absolute;
-		left: 10%;
-		top: 70%;
-		font-size: calc(1vw + 1vh);
-		font-weight: 600;
-		font-family: "Playfair Display", serif;
-	}
-	main {
-		background-color: black;
-		color: white;
-		display: block;
-		margin-top: 50px;
-	}
-	
-	.synopsisSection {
-		padding-left: 2%;
-		display: inline-block;
-		width: 38%;
-		height: 100%;
-		vertical-align: top;
-		font-size: 1.2vw;
-	}
-	
-	.synopsisTitle {
+	ul, li, a{
 		font-weight: 800;
-		font-size: 3vw;
+		font-size: 2vw;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+		color: white;
+		padding-top: 1.5vw;
 	}
 	
-	.trailer {
-		margin: auto;
-		margin-top: 50px;
-		width: 80vw;
-		height: 40vw;
+	.nav {
+		padding-top: 0;
+	}
+	
+	a:hover {
+		color: #FFD8D9;
+	}
+	
+	.ratings {
+		font-size:1.3vw;
+		color: #FFD8D9;
 	}
 	
 	.shouyaWalking {
@@ -132,15 +70,69 @@
 		vertical-align: top;
 	}
 	
-	h2 {
+	.bannerTop {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+	}
+	
+	.bannerBottom {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+	}
+	
+	.movieQuote {
+		position: absolute;
+		left: 10%;
+		top: 26%;
+		font-size: calc(1vw + 1vh);
+		font-family: "Playfair Display", serif;
+		font-weight: 600;
+		color: black;
+	}
+	
+	.movieQuoteBottom{
+		position: absolute;
+		left: 10%;
+		top: 70%;
+		font-size: calc(1vw + 1vh);
+		font-weight: 600;
+		font-family: "Playfair Display", serif;
+	}
+	
+	main {
+		display: block;
+		margin-top: 10vw;
+	}
+	
+	.synopsisSection {
+		padding-left: 2%;
+		display: inline-block;
+		width: 38%;
+		vertical-align: top;
+		font-size: 1.2vw;
+	}
+	
+	.synopsisTitle {
+		font-weight: 700;
+		font-size: 3vw;
 		margin: 0;
 		padding: 0;
 	}
 	
+	.trailer {
+		margin: auto;
+		margin-top: 10vw;
+		width: 80vw;
+		height: 40vw;
+	}
+	
 	footer {
-		display: block;
-		bacground-color: black;
-		color: white;
 		width: 90vw;
 		margin: auto;
 		margin-top: 20px;
@@ -150,46 +142,50 @@
 </style>
 
 <body>
-	<wrapper>
-		<div class="topSection">
-			<nav>
-				<h1 class="movieTitle">A Silent Voice</h1>
-				<ul class="nav">
-					<li><a href="https://en.wikipedia.org/wiki/A_Silent_Voice_(film)" target="new">Synopsis</a></li>
-					<li><a href="#trailer">Trailer</a></li>
-					<li><a href="https://www.imdb.com/title/tt5323662/fullcredits?ref_=tt_cl_sm" target="new">Cast</a></li>
-					<li><a href="https://www.rottentomatoes.com/m/a_silent_voice" target="new">Reviews</a></li>
-				</ul>
-				<p class="ratings">IMDB Rating: 8.1/10</p>
-				<p class="ratings">MyAnimeList Rating: 8.93/10</p>
-			</nav>
-			<div class="shouyaWalking">
-				<p class="movieQuote">"Can we be friends?"</p>
-				<img class="bannerTop" src="shouyaWalking.gif">
-			</div>	
-		</div>
-
-		<main>
-			<div class="nishimiya">
-				<img class="bannerBottom" src="nishimiya.gif">
-				<p class="movieQuoteBottom">"I want you to help me live."</p>
-			</div>
-			
-			<section class="synopsisSection">
-				<h2 class="synopsisTitle">Synopsis</h2>
-				<p class="synopsis">As a wild youth, elementary school student Shouya Ishida sought to beat boredom in the cruelest ways. When the deaf Shouko Nishimiya transfers into his class, Shouya and the rest of his class thoughtlessly bully her for fun. However, when her mother notifies the school, he is singled out and blamed for everything done to her. With Shouko transferring out of the school, Shouya is left at the mercy of his classmates. He is heartlessly ostracized all throughout elementary and middle school, while teachers turn a blind eye.
-
-				Now in his third year of high school, Shouya is still plagued by his wrongdoings as a young boy. Sincerely regretting his past actions, he sets out on a journey of redemption: to meet Shouko once more and make amends.</p>
-			</section>
-		</main>
+<wrapper>
+	
+	<div class="topSection">
+		<nav>
+			<h1 class="movieTitle">A Silent Voice</h1>
+			<ul class="nav">
+				<li><a href="https://en.wikipedia.org/wiki/A_Silent_Voice_(film)" target="new">Synopsis</a></li>
+				<li><a href="#trailer">Trailer</a></li>
+				<li><a href="https://www.imdb.com/title/tt5323662/fullcredits?ref_=tt_cl_sm" target="new">Cast</a></li>
+				<li><a href="https://www.rottentomatoes.com/m/a_silent_voice" target="new">Reviews</a></li>
+			</ul>
+			<p class="ratings">IMDB Rating: 8.1/10</p>
+			<p class="ratings">MyAnimeList Rating: 8.93/10</p>
+		</nav>
 		
-		<div class="trailer">
-			<iframe id="trailer" width="100%" height="100%" src="https://www.youtube.com/embed/nfK6UgLra7g?si=5wMS2zsjKw-e3hcu" title="A Silent Voice Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<div class="shouyaWalking">
+			<p class="movieQuote">"Can we be friends?"</p>
+			<img class="bannerTop" src="shouyaWalking.gif">
+		</div>	
+	</div>
+
+	<main>
+		<div class="nishimiya">
+			<img class="bannerBottom" src="nishimiya.gif">
+			<p class="movieQuoteBottom">"I want you to help me live."</p>
 		</div>
-		<footer>
-		<p>© 2024, Yonay Valdes. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
-	</footer>
-	</wrapper>
+
+		<section class="synopsisSection">
+			<h2 class="synopsisTitle">Synopsis</h2>
+			<p class="synopsis">As a wild youth, elementary school student Shouya Ishida sought to beat boredom in the cruelest ways. When the deaf Shouko Nishimiya transfers into his class, Shouya and the rest of his class thoughtlessly bully her for fun. However, when her mother notifies the school, he is singled out and blamed for everything done to her. With Shouko transferring out of the school, Shouya is left at the mercy of his classmates. He is heartlessly ostracized all throughout elementary and middle school, while teachers turn a blind eye.
+
+			Now in his third year of high school, Shouya is still plagued by his wrongdoings as a young boy. Sincerely regretting his past actions, he sets out on a journey of redemption: to meet Shouko once more and make amends.</p>
+		</section>
+	</main>
+
+	<div class="trailer">
+		<iframe id="trailer" width="100%" height="100%" src="https://www.youtube.com/embed/nfK6UgLra7g?si=5wMS2zsjKw-e3hcu" title="A Silent Voice Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+	
+	<footer>
+	<p>© 2024, Yonay Valdes. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
+	
+</wrapper>
 	
 	
 </body>
